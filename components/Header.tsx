@@ -11,14 +11,14 @@ export default function Header() {
       <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black gap-10 lg:static lg:h-auto lg:w-auto lg:bg-none pb-8 lg:pb-0">
         <Link
           href="/"
-          className={clsx("hover:font-semibold", {
+          className={clsx("hover:font-semibold focus-within:outline-none", {
             "font-semibold": pathname === "/",
           })}>
           Home
         </Link>
         <Link
           href="/projects"
-          className={clsx("hover:font-semibold", {
+          className={clsx("hover:font-semibold focus-within:outline-none", {
             "font-semibold": pathname === "/projects",
           })}>
           Projects

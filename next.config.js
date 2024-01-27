@@ -14,6 +14,12 @@ module.exports = {
         port: "",
         pathname: "/dhmmmen4e/image/upload/v1706341588/portfolio/**",
       },
+      {
+        protocol: "https",
+        hostname: "violet-controlled-junglefowl-961.mypinata.cloud",
+        port: "",
+        pathname: "/ipfs/**",
+      },
     ],
   },
 };
