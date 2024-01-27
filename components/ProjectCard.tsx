@@ -22,7 +22,7 @@ export default function ProjectCard({
     <div
       className={clsx("flex gap-10 md:gap-14", {
         "flex-col md:flex-row": !reversed,
-        "flex-col-reverse md:flex-row-reverse": reversed,
+        "flex-col md:flex-row-reverse": reversed,
       })}>
       <div className="md:max-w-[400px] flex flex-col gap-5 justify-center leading-7">
         <div className="font-bold text-xl">{title}</div>

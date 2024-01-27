@@ -1,5 +1,5 @@
 import Image from "next/image";
-import ProfileImg from "@/assets/profile.jpg";
+// import ProfileImg from "@/assets/profile.jpg";
 
 export default function Home() {
   return (
@@ -17,10 +17,13 @@ export default function Home() {
         </div>
       </div>
       <Image
-        src={ProfileImg}
+        src={
+          "https://gateway.pinata.cloud/ipfs/QmPedPPiAvERizxeJxDwJmcjAnHjdjDMKHYvYexn7bpHEz?_gl=1*13jpj8r*_ga*ZGIwNjQ0YmEtNzk0Yi00NzAwLWE0ODQtZTU0OGU4MjkzM2Vm*_ga_5RMPXG14TE*MTY3ODg3MjkwMy4xLjEuMTY3ODg3MzgyOS41My4wLjA."
+        }
         alt="profile"
         width={400}
-        className="aspect-auto rounded-lg animate-show"
+        height={350}
+        className="aspect-auto rounded-lg animate-show h-auto"
         priority
       />
       {/* <a

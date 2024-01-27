@@ -1,12 +1,13 @@
 import { ProjectCardProps } from "./components/ProjectCard";
-import DhawaImg from "@/assets/dhawa.png";
+// import DhawaImg from "@/assets/dhawa.png";
 
 export const projects: Array<Omit<ProjectCardProps, "reversed">> = [
   {
     title: "Dhawa",
     desc: "A complete revamp of the official website for Dhawa, the contemporary full-service hotel & spa getaway, part of the Banyan Tree Group.",
     url: "https://www.dhawa.com/",
-    imgSrc: DhawaImg,
+    imgSrc:
+      "https://res.cloudinary.com/dhmmmen4e/image/upload/v1706341588/portfolio/Dhawa-Contemporary-Full-service-Hotel-Spa-Getaway_nzvxdn.png",
   },
   {
     title: "Asteroid Mining Simulation",
