@@ -20,7 +20,7 @@ export default function Home() {
         src={ProfileImg}
         alt="profile"
         width={400}
-        className="aspect-auto rounded-lg"
+        className="aspect-auto rounded-lg animate-show"
         priority
       />
       {/* <a
