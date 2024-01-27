@@ -13,6 +13,7 @@ export default function Projects() {
             url={url}
             imgSrc={imgSrc}
             reversed={i % 2 === 1}
+            key={i}
           />
         );
       })}
