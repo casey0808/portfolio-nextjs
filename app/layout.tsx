@@ -24,7 +24,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={notoSans.className}>
-        <main className="min-h-screen p-12 lg:p-20 max-w-5xl mx-auto">
+        <main className="min-h-screen p-12 lg:p-20 max-w-5xl mx-auto text-neutral-900">
           <Header />
           {children}
         </main>
