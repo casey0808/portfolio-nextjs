@@ -7,7 +7,7 @@ export const projects: Array<Omit<ProjectCardProps, "reversed">> = [
     desc: "A complete revamp of the official website for Dhawa, the contemporary full-service hotel & spa getaway, part of the Banyan Tree Group.",
     url: "https://www.dhawa.com/",
     imgSrc:
-      "https://violet-controlled-junglefowl-961.mypinata.cloud/ipfs/QmQ5Ef4YW2FneyZHjGnTWphwDpAqzSF3chsz7R6vbC4Rq2",
+      "https://violet-controlled-junglefowl-961.mypinata.cloud/ipfs/QmarX2zSHgrynmddw3L8KyoemVQKy94Vw6qnsHqSQJa4T7",
   },
   {
     title: "Asteroid Mining Simulation",
