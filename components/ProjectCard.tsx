@@ -1,13 +1,13 @@
 import Link from "next/link";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import IconArrow from "@/assets/arrow.svg";
 import clsx from "clsx";
 
-type ProjectCardProps = {
+export type ProjectCardProps = {
   title: string;
   desc: string;
   url: string;
-  imgSrc: string;
+  imgSrc: string | StaticImageData;
   reversed: boolean;
 };
 
