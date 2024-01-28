@@ -38,17 +38,19 @@ export default function ProjectCard({
           <Image src={IconArrow} alt="arrow" width={16} height={16} />
         </Link>
       </div>
-      <Image
-        src={imgSrc}
-        alt={title}
-        className={clsx(
-          "object-center w-full md:w-[400px] h-auto rounded-lg hover:rotate-0 duration-300",
-          { "md:-rotate-2": !reversed, "md:rotate-2": reversed }
-        )}
-        width={400}
-        priority={priority}
-        height={400}
-      />
+      <div className="w-full md:h-[220px]">
+        <Image
+          src={imgSrc}
+          alt={title}
+          className={clsx(
+            "object-center w-full md:w-[400px] h-auto rounded-lg hover:rotate-0 duration-300",
+            { "md:-rotate-2": !reversed, "md:rotate-2": reversed }
+          )}
+          width={400}
+          priority={priority}
+          height={400}
+        />
+      </div>
     </div>
   );
 }
