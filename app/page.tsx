@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="py-7 lg:py-28 leading-7 flex gap-14 flex-col lg:flex-row lg:items-center">
+    <div className="my-7 lg:my-28 leading-7 flex gap-14 flex-col lg:flex-row lg:items-center lg:h-[400px]">
       <div className="lg:max-w-[400px]">
         <div className="mb-10 animate-typing overflow-hidden whitespace-nowrap text-lg">Hey, this is Casey  👋</div>
         <div>
