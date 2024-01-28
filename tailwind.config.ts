@@ -30,10 +30,34 @@ const config: Config = {
             width: "100%",
           },
         },
+        rotateClock: {
+          "0%": {
+            transform: "rotate(0)",
+          },
+          "20%": {
+            transform: "rotate(6deg)",
+          },
+          "100%": {
+            transform: "rotate(2deg)",
+          },
+        },
+        rotateAntiClock: {
+          "0%": {
+            transform: "rotate(0)",
+          },
+          "20%": {
+            transform: "rotate(-6deg)",
+          },
+          "100%": {
+            transform: "rotate(-2deg)",
+          },
+        },
       },
       animation: {
         show: "slightlyShown 1.2s ease-in-out",
         typing: "typing 3s steps(15)",
+        rotateClock: "rotateClock 1.2s ease",
+        rotateAntiClock: "rotateAntiClock 1.2s ease",
       },
     },
   },

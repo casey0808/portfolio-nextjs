@@ -9,7 +9,7 @@ export type ProjectCardProps = {
   url: string;
   imgSrc: string | StaticImageData;
   reversed: boolean;
-  priority?: boolean
+  priority?: boolean;
 };
 
 export default function ProjectCard({
@@ -18,7 +18,7 @@ export default function ProjectCard({
   url,
   imgSrc,
   reversed,
-  priority = false
+  priority = false,
 }: ProjectCardProps) {
   return (
     <div
@@ -26,11 +26,11 @@ export default function ProjectCard({
         "flex-col md:flex-row": !reversed,
         "flex-col md:flex-row-reverse": reversed,
       })}>
-      <div className="md:max-w-[400px] flex flex-col gap-5 justify-center leading-7">
-        <div className="font-bold text-xl">{title}</div>
-        <div>{desc}</div>
+      <div className="md:max-w-[400px] flex flex-col gap-5 justify-center leading-7 animate-show">
+        <div className="font-semibold text-2xl">{title}</div>
+        <div className="text-sm">{desc}</div>
         <Link
-          className="font-semibold text-sm flex items-center gap-2 mt-2.5 hover:underline"
+          className="font-semibold text-sm flex items-center gap-2 hover:underline"
           href={url}
           target="_blank"
           rel="noopener noreferrer">
@@ -43,7 +43,7 @@ export default function ProjectCard({
         alt={title}
         className={clsx(
           "object-center w-full md:w-[400px] h-auto rounded-lg hover:rotate-0 duration-300",
-          { "md:-rotate-2": !reversed, "md:rotate-2": reversed }
+          { "md:-rotate-2 md:animate-rotateAntiClock": !reversed, "md:rotate-2 md:animate-rotateClock": reversed }
         )}
         width={400}
         priority={priority}
