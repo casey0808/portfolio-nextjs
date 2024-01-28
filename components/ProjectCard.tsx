@@ -9,6 +9,7 @@ export type ProjectCardProps = {
   url: string;
   imgSrc: string | StaticImageData;
   reversed: boolean;
+  priority?: boolean
 };
 
 export default function ProjectCard({
@@ -17,6 +18,7 @@ export default function ProjectCard({
   url,
   imgSrc,
   reversed,
+  priority = false
 }: ProjectCardProps) {
   return (
     <div
@@ -40,11 +42,11 @@ export default function ProjectCard({
         src={imgSrc}
         alt={title}
         className={clsx(
-          "object-contain w-full md:w-[400px] h-full rounded-lg hover:rotate-0 duration-300",
+          "object-contain w-full h-auto rounded-lg hover:rotate-0 duration-300",
           { "md:-rotate-2": !reversed, "md:rotate-2": reversed }
         )}
         width={400}
-        priority={false}
+        priority={priority}
         height={400}
       />
     </div>

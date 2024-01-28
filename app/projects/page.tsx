@@ -14,6 +14,7 @@ export default function Projects() {
             imgSrc={imgSrc}
             reversed={i % 2 === 1}
             key={i}
+            priority={i <= 1}
           />
         );
       })}
