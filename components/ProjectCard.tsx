@@ -42,7 +42,7 @@ export default function ProjectCard({
         src={imgSrc}
         alt={title}
         className={clsx(
-          "object-contain w-full h-auto rounded-lg hover:rotate-0 duration-300",
+          "object-contain w-full md:w-[400px] h-auto rounded-lg hover:rotate-0 duration-300",
           { "md:-rotate-2": !reversed, "md:rotate-2": reversed }
         )}
         width={400}
