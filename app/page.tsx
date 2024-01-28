@@ -23,7 +23,7 @@ export default function Home() {
         alt="profile"
         width={400}
         height={350}
-        className="aspect-auto rounded-lg animate-show h-auto w-full"
+        className="aspect-auto rounded-lg animate-show w-[400px] h-auto"
         priority
       />
       {/* <a
