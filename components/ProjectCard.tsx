@@ -43,7 +43,7 @@ export default function ProjectCard({
         alt={title}
         className={clsx(
           "object-center w-full md:w-[400px] h-auto rounded-lg hover:rotate-0 duration-300",
-          { "md:-rotate-2 md:animate-rotateAntiClock": !reversed, "md:rotate-2 md:animate-rotateClock": reversed }
+          { "md:-rotate-2": !reversed, "md:rotate-2": reversed }
         )}
         width={400}
         priority={priority}
