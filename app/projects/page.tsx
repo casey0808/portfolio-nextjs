@@ -3,7 +3,7 @@ import { projects } from "@/constant";
 
 export default function Projects() {
   return (
-    <div className="pt-7 pb-24 md:py-20 flex flex-col gap-20 md:gap-28">
+    <div className="mt-7 mb-24 md:my-20 flex flex-col gap-20 md:gap-28">
       {projects?.map((project, i) => {
         const { title, desc, url, imgSrc } = project;
         return (
