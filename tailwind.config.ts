@@ -22,9 +22,18 @@ const config: Config = {
             opacity: "1",
           },
         },
+        typing: {
+          from: {
+            width: "9%",
+          },
+          to: {
+            width: "100%",
+          },
+        },
       },
       animation: {
         show: "slightlyShown 1.2s ease-in-out",
+        typing: "typing 3s steps(15)",
       },
     },
   },
