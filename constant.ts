@@ -1,5 +1,5 @@
 import { ProjectCardProps } from "./components/ProjectCard";
-// import DhawaImg from "@/assets/dhawa.png";
+import DhawaImg from "@/assets/dhawa.webp";
 
 export const projects: Array<Omit<ProjectCardProps, "reversed">> = [
   {
@@ -7,9 +7,10 @@ export const projects: Array<Omit<ProjectCardProps, "reversed">> = [
     desc: "A complete revamp of the official website for Dhawa, the contemporary full-service hotel & spa getaway, part of the Banyan Tree Group.",
     url: "https://www.dhawa.com/",
     imgSrc:
-      "https://violet-controlled-junglefowl-961.mypinata.cloud/ipfs/QmarX2zSHgrynmddw3L8KyoemVQKy94Vw6qnsHqSQJa4T7",
-    blurDataUrl:
-      "https://violet-controlled-junglefowl-961.mypinata.cloud/ipfs/QmQ7D6vDpM4hryPQNmKWfphT26FJ8k862HRhXwQvrkMjPj",
+      // "https://violet-controlled-junglefowl-961.mypinata.cloud/ipfs/QmarX2zSHgrynmddw3L8KyoemVQKy94Vw6qnsHqSQJa4T7",
+      DhawaImg,
+    // blurDataUrl:
+    // "https://violet-controlled-junglefowl-961.mypinata.cloud/ipfs/QmQ7D6vDpM4hryPQNmKWfphT26FJ8k862HRhXwQvrkMjPj",
   },
   {
     title: "Asteroid Mining Simulation",
